@@ -124,7 +124,7 @@ paged_table_html <- function(x, options = NULL) {
       list(
         label = if (!is.null(columnNames)) columnNames[[columnIdx]] else "",
         name = columnIdx,
-        type = tibbleType,
+        type = "",
         align = if (baseType == "character" || baseType == "factor") "left" else "right"
       )
     }
